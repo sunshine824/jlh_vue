@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-text-size-adjust: none
+}
+html,body{
+  font-size:62.5%;
+}
+a:hover,a:focus,a:active,a:link{
+  text-decoration:none!important;
+}
+i,strong,em,small{
+  font-style:normal;
+  font-weight:normal;
+}
+[lang^="zh"] html,body {
+  font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+body {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  background: #fff;
+  font-family: "Circular","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #333;
+  -webkit-overflow-scrolling: touch;
+  font-size: 1.4rem;
+  -webkit-font-smoothing:antialiased
+}
+.control input {
+  border: 1px solid #ccc;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px
+}
+.control {
+  position: relative;
+  margin-bottom: 10px;
+  color: #8f8f8f;
+}
+.bk2{
+  height:20px;
+}
+.float-left {
+  float: left
+}
+
+.float-right {
+  float: right
+}
+
+.bk05 {
+  height: 5px
+}
+
+a {
+  text-decoration: none
+}
+
+.img100 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+  margin: 0;
+  padding: 0
+}
+
+fieldset,img {
+  border: 0 none
+}
+
+address,caption,cite,code,dfn,em,th,var,b,h1,h2,h3 {
+  font-style: normal;
+  font-weight: normal
+}
+
+ol,ul,li {
+  list-style-type: none
+}
+
+q:before,q:after {
+  content: ''
+}
+
+abbr,acronym {
+  border: 0;
+  font-variant: normal
+}
+
+header,footer,section,nav,menu,details,hgroup,figure,figcaption,article,aside {
+  margin: 0;
+  padding: 0;
+  display: block
+}
+
+.btn-con {
+  background: #1eacc7;
+  color: #fff
+}
+
+.btn-default {
+  background: #aaa;
+  color: #fff
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 11px 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-image: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-appearance: none
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px
+}
+
+input[type=text]:focus {
+  border: 1px solid #f1662e
+}
+
+input[type=password]:focus {
+  border: 1px solid #f1662e
+}
+
+.bk1 {
+  height: 10px
+}
+
+.bk2 {
+  height: 20px
+}
+
+.bk3 {
+  height: 30px
+}
+
+.bk4 {
+  height: 40px
+}
+
+.bk5 {
+  height: 50px
+}
+.bk6{height:60px;}
+.bk7{height:70px;}
+.img50 {
+  max-width: 50%;
+  height: auto;
+  width: 50%
+}
+
+.img40 {
+  max-width: 40%;
+  height: auto;
+  width: 40%
+}
+
+.img60 {
+  max-width: 60%;
+  height: auto;
+  width: 60%
+}
+
+.img80 {
+  max-width: 80%;
+  height: auto;
+  width: 80%
+}
+
+.img20 {
+  max-width: 20%;
+  height: auto;
+  width: 20%
+}
+
+.img30 {
+  max-width: 25%;
+  height: auto;
+  width: 25%
+}
+
+.img35 {
+  max-width: 30%;
+  height: auto;
+  width: 30%
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden
+}
+
+.col-4 {
+  width: 40%;
+  float: left
+}
+
+p {
+  line-height: 25px
+}
+
+.col-35 {
+  width: 35%;
+  float: left
+}
+
+.col-45 {
+  width: 48%;
+  position: relative
+}
+
+.col-3 {
+  width: 32%;
+  display: inline-block;
+  position: relative
+}
+
+.col-2 {
+  width: 16%;
+  display: inline-block;
+  position: relative
+}
+
+.col-25 {
+  width: 25%;
+  display: inline-block;
+  position: relative
+}
+.bill-show,.bill-show2 {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 9999;
+  display: none;
+  margin-left: -40%;
+  width: 80%;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center
+}
+
+.bill-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .7;
+  filter: alpha(opacity=70)
+}
+.nothing2 {
+  height: 30px;
+  color: #aaa;
+  text-align: center;
+  font-size: .38rem;
+  line-height: 30px;
+}
+.control:after {
+  clear: both;
+  display: block;
+  content: '';
+}
