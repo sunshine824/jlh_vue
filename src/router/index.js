@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path:'/menu',
-      name:'菜单',
+      name:'功能列表',
       component:Menu
     }
   ]
