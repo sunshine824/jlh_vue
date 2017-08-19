@@ -5,9 +5,11 @@
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import './public/js/prefixfree'
+
+  export default {
+    name: 'app'
+  }
 </script>
 
 <style>
