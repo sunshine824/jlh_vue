@@ -30,23 +30,24 @@
       <div class="bk3"></div>
       <div class="download-cmd clearfix">
         <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.pthola.coach" class="iphone"><img :src="iphoneImg" alt="Alternate Text" /></a>
-        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.pthola.coach" class="android"><img :src="androidImg" alt="Alternate Text" /></a>
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.pthola.coach" class="android" @click.prevent="alertShow()"><img :src="androidImg" alt="Alternate Text" /></a>
       </div>
       <div class="bk1"></div>
       <p style="text-align:center;color:#505050;">请在右上菜单中选择"用Safari打开"</p>
       <div class="bk2"></div>
     </div>
-    <!--弹出层-->
-    <div class="bill-show">
-      <img class="erweima" :src="endImg" alt="Alternate Text" />
-    </div>
-    <div class="bill-mask"></div>
+    <!--二维码弹出层-->
+    <show-e-w-m ref="erweima"></show-e-w-m>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+  import showEWM from '../base/showEWM'
 
   export default {
+    components:{
+      showEWM
+    },
     data() {
       return {
         headerImg:'../static/images/header.png',
@@ -55,8 +56,12 @@
         textImg:'../static/images/text.png',
         iphoneImg:'../static/images/iphone.png',
         androidImg:'../static/images/android.png',
-        endImg:'../static/images/end.png',
         author:'九十五'
+      }
+    },
+    methods:{
+      alertShow(){
+        this.$refs.erweima.show()
       }
     }
   }
@@ -172,10 +177,6 @@
     max-width: 100%;
   }
 
-  .erweima {
-    width: 50%;
-    padding: 10% 0;
-  }
 
   .share-show img {
     width: 50%;
